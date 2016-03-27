@@ -1,0 +1,218 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="pcode.com.wajbatt.RegistrationView"
+    android:background="@color/windowBackground"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/reg_img_bkg_title"
+        />    <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/imageView"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/reg_img_title_img"
+    android:layout_marginTop="5dp"
+    />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_above="@+id/reg_btn_registertion">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:hint= "أسم المطعم"
+                android:textColorHint="@color/gray"
+                android:gravity="right"
+                android:background="@drawable/edit_text"
+                android:layout_marginBottom="15dp"
+                android:paddingRight="3dp"
+                android:paddingTop="1dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/editText6"
+                android:textColor="@color/black"
+                android:hint="هاتف المطعم"
+                android:textColorHint="@color/gray"
+                android:gravity="right"
+                android:background="@drawable/edit_text"
+                android:layout_marginBottom="15dp"
+                android:paddingRight="3dp"
+                android:paddingTop="1dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/editText3"
+                android:textColor="@color/black"
+                android:hint="البريد الإلكتروني"
+                android:textColorHint="@color/gray"
+                android:gravity="right"
+                android:background="@drawable/edit_text"
+                android:layout_marginBottom="15dp"
+                android:paddingRight="3dp"
+                android:paddingTop="1dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editText4"
+                android:textColor="@color/black"
+                android:hint="الرمز السري"
+                android:textColorHint="@color/gray"
+                android:gravity="right"
+                android:background="@drawable/edit_text"
+                android:layout_marginBottom="15dp"
+                android:paddingRight="3dp"
+                android:paddingTop="1dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editText5"
+                android:textColor="@color/black"
+                android:hint="تأكيد الرمز السري"
+                android:textColorHint="@color/gray"
+                android:gravity="right"
+                android:background="@drawable/edit_text"
+                android:layout_marginBottom="15dp"
+                android:paddingRight="3dp"
+                android:paddingTop="1dp" />
+
+          <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:inputType="textPersonName"
+                android:hint="الخدمة"
+                android:ems="10"
+                android:id="@+id/editText11"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:enabled="false"
+                android:gravity="right"
+                android:textColorHint="@color/gray"
+                android:background="@drawable/edit_text"
+              android:layout_marginBottom="15dp"
+                android:paddingRight="3dp"
+                android:paddingTop="1dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:inputType="textPersonName"
+                android:hint="المحافظة"
+                android:ems="10"
+                android:id="@+id/editText10"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:enabled="false"
+                android:gravity="right"
+                android:background="@drawable/edit_text"
+                android:layout_marginBottom="15dp"
+                android:paddingRight="3dp"
+                android:paddingTop="1dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:inputType="textPersonName"
+                android:hint="المدينة"
+                android:ems="10"
+                android:id="@+id/editText7"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:enabled="false"
+                android:gravity="right"
+                android:textColorHint="@color/gray"
+                android:background="@drawable/edit_text"
+                android:layout_marginBottom="15dp"
+                android:paddingRight="3dp"
+                android:paddingTop="1dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:inputType="textPersonName"
+                android:hint="الأحياء"
+                android:ems="10"
+                android:id="@+id/editText9"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:enabled="false"
+                android:gravity="right"
+                android:textColorHint="@color/gray"
+                android:background="@drawable/edit_text"
+                android:layout_marginBottom="15dp"
+                android:paddingRight="3dp"
+                android:paddingTop="1dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:inputType="textPersonName"
+                android:hint="الأحياء التي تم إضافتها"
+                android:ems="10"
+                android:id="@+id/editText8"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:enabled="false"
+                android:gravity="right"
+                android:textColorHint="@color/gray"
+                android:background="@drawable/edit_text"
+                android:layout_marginBottom="15dp"
+                android:paddingRight="3dp"
+                android:paddingTop="1dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_btn_registertion"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/reg_img_submit"
+
+        />
+
+
+</RelativeLayout>

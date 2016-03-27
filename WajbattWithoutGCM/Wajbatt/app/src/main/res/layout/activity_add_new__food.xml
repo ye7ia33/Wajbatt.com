@@ -1,0 +1,175 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="pcode.com.wajbatt.RegistrationView"
+    android:background="@color/windowBackground"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="المعلومات الخاصة بالأكلة"
+        android:id="@+id/reg_lbl_Title"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:layout_below="@+id/reg_lbl_Title"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/addnewfood_endView"
+        android:layout_marginBottom="10dp"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/scrollView2"
+            android:layout_centerHorizontal="true">
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="أسم الأكله"
+                android:ems="10"
+                android:id="@+id/editText2"
+               />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="ثمن الأكله"
+                android:ems="10"
+                android:id="@+id/editText12"
+              />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="نوع الأكله"
+                android:ems="10"
+                android:id="@+id/editText13"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="صورة الأكله"
+                android:gravity="center_horizontal"
+                android:id="@+id/textView3"
+
+                />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/imageButton"
+                android:background="@drawable/wajbattlogo"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" الإضافات المرافقة للأكلة"
+                android:id="@+id/reg_lbl_"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView3"
+                android:layout_gravity="center_horizontal">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/addnewfood_CustomLinearLayOut"
+                    >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addnewfood_Buttonlayout"
+
+                        >
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/addnewfood_remmove"
+                            android:id="@+id/addNewFood_BtnREMOVE"
+                            android:onClick="addNewFood_removeCustomView"
+                            />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/addNewFood_BtnADD"
+                            android:background="@drawable/addnewfood_add"
+                            android:onClick="addNewFood_addCustomView"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addnewfood_endView"
+        android:layout_alignParentBottom="true"
+       >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/addnewfood_img_submit"
+            android:id="@+id/addNewFood_BtnSUBMIT" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addNewFood_BtnCANCEL"
+            android:background="@drawable/addnewfood_cancel"
+            android:onClick="addNewFood_DismissView"
+
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
